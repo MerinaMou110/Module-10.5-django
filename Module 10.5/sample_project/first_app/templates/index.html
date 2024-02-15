@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>---Join Filter---</h1>
+    <h2>{{ lst | join:" - " }}</h2>
+
+    <h1>---Date Filter---</h1>
+    <h2>{{ today | date:"D d M Y" }}</h2>
+    <h2>{{ today|date:"SHORT_DATE_FORMAT" }}</h2>
+    <h2>{{ today | date }}</h2>
+
+     <h1>---Add Filter---</h1>
+     <h2>{{ sum| add:"5" }}</h2>
+
+     <h1>---Capfirst Filter---</h1>
+     <h2>{{ courses.0.name | capfirst}}</h2>
+
+     <h1>---Cut Filter---</h1>
+    <h2>{{ str | cut:" " }}</h2>
+
+    <h1>---Dictsort Filter---</h1>
+    <h2>{{ courses | dictsort:"id" }}</h2>
+
+   
+    <h1>---First Filter---</h1>
+    <h2>{{ lst | first }}</h2>
+
+    <h1>---Last Filter---</h1>
+    <h2>{{ lst | last }}</h2>
+
+    <h1>---Length Filter---</h1>
+    <h2>{{ lst | length }}</h2>
+
+    <h1>---Linenumbers Filter---</h1>
+    <h2>{{ lst1 | linenumbers }}</h2>
+
+    <h1>---Lower Filter---</h1>
+    <h1>{{ str | lower }}</h1>
+
+    <h1>---Upper Filter---</h1>
+    <h2>{{ str | upper }}</h2>
+
+    <h1>---Title Filter---</h1>
+    <h2>{{ str1 | title }}</h2>
+
+    <h1>---Random Filter---</h1>
+    <h2>{{ lst | random }}</h2>
+
+    <h1>---Slice Filter---</h1>
+    <h2>{{ lst | slice:":2" }}</h2>
+
+    <h1>---Time Filter---</h1>
+    <h2>{{ today | time:"H:i" }}</h2>
+    <h2>{{ today | time:"H\h i\m" }}</h2>
+
+    <h1>---Timesince Filter---</h1>
+    <h2> {{ my_date_time| timesince:today}} </h2>
+
+    <h1>---Truncatechars Filter---</h1>
+    <h2>{{ str1 | truncatechars:7 }}</h2>
+
+    <h1>---Wordcount Filter---</h1>
+    <h2>{{ str | wordcount }}</h2>
+
+    <h1>---Truncatewords Filter---</h1>
+    <h2> {{ str1 | truncatewords:3 }}</h2>
+
+    <h1>---Pluralize Filter---</h1>
+    <h2>You have {{ num_tomato }} tomato{{ num_tomato | pluralize:"es" }}.</h2>
+
+    <h1>---Make_list Filter---</h1>
+    <h2>{{ str | make_list }}</h2>
+
+    <h1>---addslashes---</h1>
+    <h2>{{ slash| addslashes }}</h2>
+
+    <h1>---center---</h1>
+    <h2>"{{ str | center:"15" }}"</h2>
+
+    {% comment %} <h1>---cut---</h1>
+    <h2>{{ value | default:"nothing" }} {% endcomment %}
+    <h1>---divisibleby---</h1>
+     <h2>{{ age | divisibleby:"3" }}</h2>
+
+     <h1>{{ title | escape }}</h1>
+
+     <h1>---filesizeformat---    </h1>
+     <h2>{{ text | filesizeformat }}</h2>
+
+     <h1>---slugify---</h1>
+     <h2>{{ str | slugify }}</h2>
+
+     <h1>----unordered_list---</h1>
+     <h2>{{ var|unordered_list }}</h2>
+
+     <h1></h1>
+
+</body>
+</html>
